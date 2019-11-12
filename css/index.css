@@ -54,6 +54,11 @@ table {
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+	margin: 1px 200px 5px 100px;
+	height: max- max-content; 
+	width: 950px;
+	margin: auto;
 }
 
 h1, h2, h3, h4, h5 {
@@ -67,10 +72,17 @@ p {
 }
 
 .container {
+    display:block;
     width: 800px;
-    margin: 0 auto;
+  
 }
-
+h2 {
+    margin-top: 15px;
+    font-weight: bold;
+}
+p {
+    font-weight: bold;
+}
 .top-content {
     display: flex;
     flex-wrap: wrap;
@@ -95,16 +107,20 @@ p {
     margin-bottom: 0;
 }
 
+/* .middle-content .boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+} */
+
 .middle-content .boxes {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
-
-.middle-content .boxes .box {
+.box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9, .box10 {
     width: 12.5%;
     height: 100px;
-    background: black;
     margin: 20px 2.5%;
     color: white;
     display: flex;
@@ -112,6 +128,37 @@ p {
     justify-content: center;
 }
 
+.box1 {
+    background-color: teal;
+}
+
+.box2 {
+    background-color: gold;
+}
+.box3 {
+    background-color: cadetblue;
+}
+.box4 {
+    background-color:coral;
+}
+.box5 {
+    background-color: crimson;
+}
+.box6 {
+    background-color: forestgreen;
+}
+.box7 {
+    background-color: darkorchid;
+}
+.box8 {
+    background-color: hotpink;
+}
+.box9 {
+    background-color: indigo;
+}
+.box10 {
+    background-color: dodgerblue;
+}
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -143,4 +190,54 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 1em;
+}
+nav {
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 600px;
+}
+a img {
+    margin-left: 1em;
+    margin-top: 1em;
+}
+.navigation a {
+	text-decoration: none;
+    color: black;
+    margin-top: 3em;
+    margin-left:3em;
+    font-size: 14px;
+    font-weight: bold;
+}
+ .info-container {
+    display: flex;
+	padding: 1.5em 0;
+    margin-top: 2em;
+    height: calc(945px + 10em);
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+ }
+ .info-box {
+    width:45%;
+    height: 250px;
+	padding: 1em; 
+}
+button {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 150px;
+    height: 40px;
+    position: relative;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 1.5em;
 }
